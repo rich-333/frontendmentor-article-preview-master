@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="styles.css" />
 
     <title>Frontend Mentor | Article preview component</title>
+    
+    <script type="text/javascript" charset="utf-8" src="index.js" defer></script>
   </head>
   <body>
     <article class="article">
@@ -27,7 +29,7 @@
       </div>
       
       
-      <div class="social">
+      <div class="social social__active">
         <p class="social__share">SHARE</p>
         <img class="social__icon" src="../images/icon-facebook.svg" />
         <img class="social__icon" src="../images/icon-twitter.svg"/>
@@ -42,7 +44,7 @@
             <p class="profile__date">28 Jun 2020</p>
           </div>
         </div>
-        <button class="profile__share" type="submit">
+        <button class="profile__share" type="submit" id="open-share">
           <img class="share__icon" src="./images/icon-share.svg" alt="" />
         </button>
       </footer>

@@ -59,7 +59,6 @@ body {
   justify-content: space-between;
   padding: 0.8rem 1.9rem;
   align-items: center;
-  background: green;
 }
 
 .container__profile {
@@ -85,6 +84,7 @@ body {
   justify-content: center;
   background-color: var(--Light-Grayish-Blue);
   z-index: 100;
+  cursor: pointer;
 }
 
 .profile__data {
@@ -112,6 +112,10 @@ body {
   bottom: 0;
   padding: 0.8rem 1.9rem;
   width: 100%;
+  opacity: 0;
+  z-index: 50;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
 
@@ -123,4 +127,9 @@ body {
 .social__icon {
   width: 1.3rem;
   height: 1.3rem;
+}
+
+.social__active {
+  opacity: 1;
+  pointer-events: auto;
 }
