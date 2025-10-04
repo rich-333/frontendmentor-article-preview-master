@@ -17,6 +17,7 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: var(--font-primary);
   font-size: 13px;
   display: flex;
   align-items: center;
@@ -37,6 +38,7 @@ body {
 
 .article__image {
   width: 100%;
+  object-fit: cover;
 }
 
 .article__info {
@@ -48,7 +50,7 @@ body {
   color: var(--Very-Dark-Grayish-Blue);
   font-size: 1.1rem;
   line-height: 1.4;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .article__description {
@@ -89,7 +91,7 @@ body {
   cursor: pointer;
 }
 
-.profile__share:active {
+.profile__share-active {
   background-color: var(--Desaturated-Dark-Blue);
 }
 
@@ -97,7 +99,7 @@ body {
   color: #6e8098;
 }
 
-.profile__share:active .icon__share {
+.icon__share-active {
   color: white;
 }
 
