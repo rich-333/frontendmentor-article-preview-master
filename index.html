@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Add these items to enhance the furniture in your home"
+    />
 
     <link
       rel="icon"
@@ -13,41 +17,73 @@
     <link rel="stylesheet" href="styles.css" />
 
     <title>Frontend Mentor | Article preview component</title>
-    
-    <script type="text/javascript" charset="utf-8" src="index.js" defer></script>
+
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      src="index.js"
+      defer
+    ></script>
   </head>
   <body>
     <article class="article">
-      <img class="article__image" src="./images/drawers.jpg" alt="" />
-    
-      <div class="article__info">
-        <h1 class="article__title"> Shift the overall look and feel by adding these wonderful touches to furniture in your home
-        </h1>
-        <p class="article__description">
-          Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.
-        </p>
+      <div class="container__image">
+        <img class="article__image" src="./images/drawers.jpg" alt="" />
       </div>
-      
-      
-      <div class="social social__active">
-        <p class="social__share">SHARE</p>
-        <img class="social__icon" src="../images/icon-facebook.svg" />
-        <img class="social__icon" src="../images/icon-twitter.svg"/>
-        <img class="social__icon" src="../images/icon-pinterest.svg" />
-      </div>
-      
-      <footer class="article__footer">
-        <div class="container__profile">
-          <img class="profile__avatar" src="./images/avatar-michelle.jpg" alt="Avatar Michelle" />
-          <div class="profile__data">
-            <p class="profile__name">Michelle Appleton</p>
-            <p class="profile__date">28 Jun 2020</p>
-          </div>
+
+      <div class="container__info">
+        <div class="article__info">
+          <h1 class="article__title">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p class="article__description">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
         </div>
-        <button class="profile__share" type="submit" id="open-share">
-          <img class="share__icon" src="./images/icon-share.svg" alt="" />
-        </button>
-      </footer>
-    </article> 
+
+        <footer class="article__footer">
+          <div class="container__profile">
+            <img
+              class="profile__avatar"
+              src="./images/avatar-michelle.jpg"
+              alt="Avatar Michelle"
+            />
+            <div class="profile__data">
+              <p class="profile__name">Michelle Appleton</p>
+              <p class="profile__date">28 Jun 2020</p>
+            </div>
+          </div>
+          <button class="profile__share" type="submit" id="open-share">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon__share"
+              width="15"
+              height="13"
+            >
+              <path
+                fill="currentColor"
+                d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+              />
+            </svg>
+          </button>
+        </footer>
+
+        <div class="social social__active">
+          <p class="social__share">SHARE</p>
+          <a href="">
+            <img class="social__icon" src="../images/icon-facebook.svg" />
+          </a>
+          <a href="">
+            <img class="social__icon" src="../images/icon-twitter.svg" />
+          </a>
+          <a href="">
+            <img class="social__icon" src="../images/icon-pinterest.svg" />
+          </a>
+        </div>
+      </div>
+    </article>
   </body>
 </html>
